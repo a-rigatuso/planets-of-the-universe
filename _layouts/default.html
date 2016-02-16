@@ -3,20 +3,21 @@
 <head>
   <meta charset="utf-8">
   <title>Planets of the Universe</title>
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/common.css">
 </head>
 <body>
 
-<header>
-  <h1>Planets of the Universe</h1>
-  <nav>
-    <ul>
-      <li><a href="{{site.baseurl}}/index.html">Home</a></li>
-      <li><a href="{{site.baseurl}}/news.html">News</a></li>
-    </ul>
-  </nav>
-</header>
+  <header>
+    <h1>Planets of the Universe</h1>
+    {% include nav.html navclass="nav-top" %}
+  </header>
 
-{{content}}
+  {{content}}
+
+  <footer>
+    {% include nav.html navclass="nav-bottom" %}
+    <p>&copy; 2016 Planets of the Universe</p>
+  </footer>
 
 </body>
 </html>
